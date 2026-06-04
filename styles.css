@@ -28,9 +28,9 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 22% 10%, rgba(47, 140, 255, 0.16), transparent 34%),
-    radial-gradient(circle at 86% 18%, rgba(255, 138, 61, 0.12), transparent 32%),
-    linear-gradient(180deg, #050812 0%, #08101d 48%, #050812 100%);
+    radial-gradient(circle at 22% 10%, rgba(0, 102, 255, 0.2), transparent 34%),
+    radial-gradient(circle at 86% 18%, rgba(0, 163, 255, 0.14), transparent 32%),
+    linear-gradient(180deg, #064c82 0%, #062d55 44%, #050812 100%);
   color: var(--text);
   font-family: Inter, system-ui, sans-serif;
   letter-spacing: 0;
@@ -168,46 +168,101 @@ textarea {
 }
 
 .hero {
-  align-items: end;
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.55fr);
-  gap: 28px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
-  padding: 150px max(22px, calc((100vw - 1180px) / 2)) 64px;
+  padding: 110px max(22px, calc((100vw - 1380px) / 2)) 64px;
   position: relative;
+  text-align: center;
 }
 
 .aether-canvas {
-  inset: 0;
-  opacity: 0.72;
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
+  display: none;
 }
 
-.hero-media {
-  inset: 0;
-  opacity: 0.22;
-  position: absolute;
-  z-index: -3;
-}
-
-.hero-media::after {
-  background: linear-gradient(90deg, rgba(5, 8, 18, 0.94), rgba(5, 8, 18, 0.52), rgba(5, 8, 18, 0.86));
+.hero::after {
+  background: #ff5b24;
+  bottom: -10px;
   content: "";
-  inset: 0;
+  height: 10px;
+  left: 0;
   position: absolute;
+  transform: rotate(1.5deg);
+  transform-origin: left bottom;
+  width: 42%;
+  z-index: 1;
 }
 
-.hero-media img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
+.hero-geometry {
+  background:
+    linear-gradient(150deg, rgba(0, 120, 205, 0.92) 0 19%, transparent 19%),
+    linear-gradient(148deg, transparent 0 22%, rgba(3, 86, 153, 0.72) 22% 44%, transparent 44%),
+    linear-gradient(31deg, transparent 0 46%, rgba(0, 64, 112, 0.86) 46% 63%, transparent 63%),
+    linear-gradient(151deg, transparent 0 58%, rgba(0, 47, 85, 0.9) 58% 78%, transparent 78%),
+    linear-gradient(32deg, transparent 0 71%, rgba(8, 105, 178, 0.58) 71% 100%),
+    linear-gradient(180deg, #0f78bd 0%, #064d83 42%, #043b68 100%);
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -2;
+}
+
+.hero-geometry::before,
+.hero-geometry::after {
+  content: "";
+  position: absolute;
+  transform: skewY(-30deg) rotate(-8deg);
+}
+
+.hero-geometry::before {
+  background: rgba(7, 54, 93, 0.72);
+  box-shadow:
+    360px 84px 0 rgba(0, 78, 138, 0.64),
+    760px 148px 0 rgba(0, 48, 88, 0.72),
+    1130px 38px 0 rgba(6, 91, 154, 0.58),
+    1420px 188px 0 rgba(2, 45, 82, 0.72);
+  height: 220px;
+  left: -120px;
+  top: -46px;
+  width: 360px;
+}
+
+.hero-geometry::after {
+  background: rgba(0, 47, 87, 0.92);
+  box-shadow:
+    420px -84px 0 rgba(0, 85, 146, 0.66),
+    860px 44px 0 rgba(1, 43, 80, 0.92),
+    1250px -110px 0 rgba(9, 95, 160, 0.54);
+  bottom: -58px;
+  height: 280px;
+  right: -180px;
+  width: 500px;
 }
 
 .hero-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: min(94vw, 1420px);
   min-width: 0;
-  max-width: 780px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero-brand-lockup {
+  align-items: center;
+  display: flex;
+  gap: 34px;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+
+.hero-logo {
+  height: clamp(112px, 11vw, 178px);
+  object-fit: contain;
+  width: clamp(112px, 11vw, 178px);
 }
 
 .eyebrow,
@@ -220,9 +275,17 @@ textarea {
   font-size: 13px;
   font-weight: 800;
   gap: 8px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
   max-width: 100%;
+}
+
+.hero .eyebrow {
+  color: #ffffff;
+  font-family: var(--hd-font-secondary);
+  font-size: clamp(30px, 4vw, 58px);
+  font-weight: 800;
+  line-height: 1;
 }
 
 h1,
@@ -234,26 +297,47 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(54px, 8vw, 108px);
-  line-height: 0.9;
-  margin: 18px 0 24px;
-  max-width: 850px;
+  color: #ffffff;
+  font-size: clamp(56px, 9.2vw, 150px);
+  font-weight: 800;
+  line-height: 0.92;
+  margin: 0 0 28px;
+  max-width: 1380px;
+  text-transform: uppercase;
 }
 
 .hero-copy {
-  color: #d7e6f9;
-  font-size: clamp(18px, 2vw, 22px);
-  line-height: 1.55;
+  color: #ffffff;
+  font-family: var(--hd-font-secondary);
+  font-size: clamp(17px, 1.35vw, 25px);
+  font-weight: 800;
+  line-height: 1.05;
   margin: 0;
-  max-width: 720px;
+  max-width: 760px;
   overflow-wrap: break-word;
+  text-transform: uppercase;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 76px;
+}
+
+.hero .primary-button {
+  background: #ff5b24;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  color: #ffffff;
+  font-family: var(--hd-font-secondary);
+  font-size: clamp(15px, 1vw, 18px);
+  font-weight: 800;
+  min-height: 78px;
+  min-width: min(100%, 460px);
+  padding: 0 48px;
+  text-transform: uppercase;
 }
 
 .hero-panel,
@@ -869,12 +953,12 @@ h1 {
   }
 
   .hero {
-    align-items: start;
-    padding-top: 128px;
+    align-items: center;
+    padding-top: 118px;
   }
 
   .aether-canvas {
-    opacity: 0.86;
+    display: none;
   }
 
   .hero-panel {
@@ -886,6 +970,12 @@ h1 {
   .hero-copy {
     max-width: 100%;
     width: 100%;
+  }
+
+  .hero-brand-lockup {
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 30px;
   }
 
   .section-heading {
@@ -915,17 +1005,33 @@ h1 {
   }
 
   h1 {
-    font-size: 52px;
+    font-size: clamp(46px, 15vw, 78px);
   }
 
-  .eyebrow {
-    font-size: 12px;
+  .hero .eyebrow {
+    font-size: clamp(22px, 7vw, 34px);
     line-height: 1.4;
   }
 
   .hero-content,
   .hero-copy {
-    max-width: 345px;
+    max-width: 100%;
+  }
+
+  .hero-copy {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .hero-actions {
+    margin-top: 42px;
+    width: 100%;
+  }
+
+  .hero .primary-button {
+    min-height: 58px;
+    min-width: 0;
+    width: min(100%, 360px);
   }
 
   .hero-actions,
