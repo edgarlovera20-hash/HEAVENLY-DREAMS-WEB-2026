@@ -5,311 +5,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Heavenly Dreams 2026: plataforma de reclutamiento, cultura y operacion para candidatos, supervisores y equipo RH."
+      content="Heavenly Dreams 2026: experiencia premium de reclutamiento, telecomunicaciones y soluciones empresariales."
     />
-    <meta name="theme-color" content="#0066FF" />
-    <title>Heavenly Dreams 2026 | Reclutamiento Inteligente</title>
+    <meta name="theme-color" content="#06142e" />
+    <title>Heavenly Dreams 2026 | Talento, Tecnologia y Futuro</title>
     <link rel="icon" type="image/png" href="assets/heavenly-dreams-logo.png" />
     <link rel="apple-touch-icon" href="assets/heavenly-dreams-logo.png" />
     <meta property="og:image" content="assets/heavenly-dreams-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header" id="inicio">
-        <nav class="nav-bar" aria-label="Navegacion principal">
-          <a class="brand" href="#inicio" aria-label="Heavenly Dreams inicio">
-            <img class="brand-mark" src="assets/heavenly-dreams-logo.png" alt="Logo Heavenly Dreams" />
-            <span>
-              <strong>Heavenly Dreams</strong>
-              <small>RH Platform 2026</small>
-            </span>
-          </a>
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
-            <i data-lucide="menu" aria-hidden="true"></i>
-          </button>
-          <div class="nav-links" id="main-menu">
-            <a href="#nosotros">Nosotros</a>
-            <a href="#servicios">Afiliados</a>
-            <a href="#vacantes">Vacantes</a>
-            <a href="#cultura">Cultura</a>
-            <a href="#contacto">Contacto</a>
-          </div>
-          <a class="nav-cta" href="#postularme"><i data-lucide="send" aria-hidden="true"></i> Postularme</a>
-        </nav>
+    <canvas id="particle-stage" aria-hidden="true"></canvas>
+    <div class="ambient-grid" aria-hidden="true"></div>
 
-        <section class="hero">
-          <canvas class="aether-canvas" id="aether-canvas" aria-hidden="true"></canvas>
-          <div class="hero-geometry" aria-hidden="true"></div>
-          <div class="hero-content">
-            <div class="hero-brand-lockup">
-              <img class="hero-logo" src="assets/heavenly-dreams-logo.png" alt="Logo Heavenly Dreams" />
-              <p class="eyebrow">Heavenly Dreams SAS de CV.</p>
-            </div>
-            <h1>Tu Team Dream comienza aqui !!!</h1>
-            <p class="hero-copy">
-              Somos una empresa dedicada en la representacion, publicidad y marketing directo.
-            </p>
-            <div class="hero-actions">
-              <a class="primary-button" href="#vacantes">Inicia tu Dream Team</a>
-            </div>
-          </div>
-        </section>
-      </header>
-
-      <main>
-        <section class="section about-section" id="nosotros">
-          <div class="section-heading">
-            <span>Quienes somos</span>
-            <h2>Conectando marcas con personas e impulsando futuros.</h2>
-          </div>
-          <div class="about-grid">
-            <article class="glass-block large">
-              <h3>Heavenly Dreams SAS de CV</h3>
-              <p>
-                Nuestra trayectoria es la historia de empresas satisfechas por el profesionalismo en la representacion
-                y de talentos que superan su potencial para transformar sus metas en realidad, con respaldo de anos de
-                experiencia y pasion.
-              </p>
-              <div class="timeline">
-                <span>Representacion comercial con enfoque profesional</span>
-                <span>Publicidad y marketing directo para aliados comerciales</span>
-                <span>Crecimiento real para el talento que forma parte del Dream Team</span>
-              </div>
-            </article>
-            <article class="glass-block image-block">
-              <img
-                src="https://images.openai.com/static-rsc-4/fmOyldBK_VRBhXNhjCX4Q13QW6o032-tHXG_nz0al9hjBuQHpCyX2foH0udUY4RjXsQCpES1D3TP8oEtP9GUiubBYWAQ5xCxEEYZR7sTzmQAfxPDa6qX16If9hIQmd68RYK852aSpe1dtyBSERIukYOrdlMzwWlO4zFd31y5M85ED8qCBxL0pSDckP0kHarf?purpose=fullsize"
-                alt="Panel visual corporativo futurista para Heavenly Dreams"
-              />
-            </article>
-          </div>
-        </section>
-
-        <section class="section values-section">
-          <div class="value-card">
-            <i data-lucide="compass" aria-hidden="true"></i>
-            <h3>Mision</h3>
-            <p>Potenciar el exito de nuestros aliados comerciales con soluciones de representacion y comercializacion excepcionales, creando oportunidades reales de crecimiento y capacitacion para nuestro equipo.</p>
-          </div>
-          <div class="value-card">
-            <i data-lucide="eye" aria-hidden="true"></i>
-            <h3>Vision</h3>
-            <p>Liderar el sector de consultoria a nivel nacional como incubadora del talento mas selecto en telecomunicaciones y fuente de soluciones que definan excelencia en el mercado.</p>
-          </div>
-          <div class="value-card">
-            <i data-lucide="shield-star" aria-hidden="true"></i>
-            <h3>Valores</h3>
-            <p>Excelencia y confianza, integridad y empatia, colaboracion y crecimiento, resultados e innovacion.</p>
-          </div>
-        </section>
-
-        <section class="section services-section" id="servicios">
-          <div class="section-heading compact">
-            <span>Marcas y afiliados</span>
-            <h2>Soluciones comerciales respaldadas por marcas lideres.</h2>
-          </div>
-          <div class="service-grid">
-            <article><i data-lucide="radio-tower"></i><h3>Telecomunicaciones</h3><p>Representacion, prospeccion y atencion directa para marcas aliadas.</p></article>
-            <article><i data-lucide="megaphone"></i><h3>Marketing directo</h3><p>Acciones comerciales enfocadas en captacion, servicio y resultados.</p></article>
-            <article><i data-lucide="graduation-cap"></i><h3>Capacitacion</h3><p>Induccion, seguimiento y desarrollo continuo del equipo.</p></article>
-            <article><i data-lucide="chart-line"></i><h3>Resultados</h3><p>Procesos claros, metas medibles y supervision constante.</p></article>
-          </div>
-        </section>
-
-        <section class="section partners-section" aria-label="Empresas que nos respaldan">
-          <div class="partner-track">
-            <span>AT&amp;T</span><span>Totalplay</span><span>Infinitum</span><span>Movistar</span><span>American Express</span><span>Costco Wholesale</span>
-            <span>AT&amp;T</span><span>Totalplay</span><span>Infinitum</span><span>Movistar</span><span>American Express</span><span>Costco Wholesale</span>
-          </div>
-        </section>
-
-        <section class="section jobs-section" id="vacantes">
-          <div class="section-heading">
-            <span>Vacantes</span>
-            <h2>Tu proximo gran paso: forma parte de nuestro Dream Team.</h2>
-          </div>
-          <div class="jobs-layout">
-            <aside class="jobs-filter">
-              <label for="job-search">Buscar</label>
-              <input id="job-search" type="search" placeholder="Puesto o ciudad" />
-              <label for="job-area">Area</label>
-              <select id="job-area">
-                <option value="todas">Todas</option>
-                <option value="operacion">Operacion</option>
-                <option value="cliente">Atencion al cliente</option>
-                <option value="supervision">Supervision</option>
-              </select>
-              <div class="filter-stat">
-                <strong id="job-count">3</strong>
-                <span>vacantes visibles</span>
-              </div>
-            </aside>
-            <div class="job-list" id="job-list">
-              <article class="job-card" data-area="operacion" data-title="ayudante general monterrey">
-                <div>
-                  <span class="tag">Operacion</span><h3>Ayudante General</h3>
-                  <p>Garantiza la eficiencia administrativa y operativa de proyectos en telecomunicaciones.</p>
-                  <ul class="job-details">
-                    <li>Soporte a supervisores y resguardo de expedientes.</li>
-                    <li>Captura de datos, respaldo de informacion y organizacion documental.</li>
-                    <li>Sin experiencia previa, actitud proactiva y disponibilidad de horario.</li>
-                  </ul>
-                </div>
-                <button type="button" data-job="Ayudante General">Aplicar</button>
-              </article>
-              <article class="job-card" data-area="cliente" data-title="atencion al cliente remoto">
-                <div>
-                  <span class="tag accent">Cliente</span><h3>Atencion al Cliente</h3>
-                  <p>Primer contacto entre marca y cliente, con enfoque en servicio, sondeo y cierre.</p>
-                  <ul class="job-details">
-                    <li>Prospeccion, captacion y seguimiento de clientes potenciales.</li>
-                    <li>Asesoria clara, manejo de objeciones y fidelizacion.</li>
-                    <li>Buena presentacion, comunicacion, dinamismo y actitud de servicio.</li>
-                  </ul>
-                </div>
-                <button type="button" data-job="Atencion al Cliente">Aplicar</button>
-              </article>
-              <article class="job-card" data-area="supervision" data-title="supervisor operaciones saltillo">
-                <div>
-                  <span class="tag warm">Supervision</span><h3>Supervisor de Personal</h3>
-                  <p>Lidera equipos, asegura calidad de servicio y gestiona resultados con enfoque humano.</p>
-                  <ul class="job-details">
-                    <li>Coordinacion de metas, control documental y supervision de clientes.</li>
-                    <li>Indispensable experiencia previa en manejo de personal.</li>
-                    <li>Salario semanal de $2,500 MXN, incentivos, prestaciones y capacitacion pagada.</li>
-                  </ul>
-                </div>
-                <button type="button" data-job="Supervisor de Personal">Aplicar</button>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section culture-section" id="cultura">
-          <div class="section-heading compact">
-            <span>Cultura organizacional</span>
-            <h2>Un ambiente profesional, alegre y cercano.</h2>
-          </div>
-          <div class="culture-grid">
-            <img
-              src="https://images.openai.com/static-rsc-4/k8NgfAXf-OEIRqpW_smBaQxOj1I0Ei-Hls3bg-P2tAoJf784LzJr0HNsWibhoFAjO50z0gpxBd7z49KAxYCGKH7hBwI1xYWHIMxQCAaCHBP8xDrw5YHQkuF51Giu9NNeM-yIgZFhRb8kzKHrxbGBnoVEg2shZ1bk7BOJFh-mG_16CZ-fCCprvO1TxliOZc2U?purpose=fullsize"
-              alt="Galeria corporativa estilo futurista"
-            />
-            <div class="recognition-panel">
-              <i data-lucide="award" aria-hidden="true"></i>
-              <h3>Reconocimientos 2026</h3>
-              <p>Apoyos, capacitaciones, bonos economicos, uniformes, materiales de trabajo y reconocimiento nacional para los mejores supervisores.</p>
-              <button type="button" data-toast="Modulo de reconocimientos listo para conectar al CRM.">
-                Ver reconocimientos
-              </button>
-            </div>
-            <img
-              src="https://images.openai.com/static-rsc-4/sYkZL3hQqA-CQ2Pc2n1V2j1exFJYlFP6zRMu8nMmypOmcFNHDHVcgYazwwoKLtDxzmdrcnGZ8AMzp09S6MHvDYc_CgfgmOJAMXYFP0bbz5_1D-DdJedNo3D2gAe3x1iQtUH8p1HwlbEz0ShC0IiuR_RajCIRgiMDj0JBgL9LyYhs4QUWWJMw8ZOAvx6om_Lf?purpose=fullsize"
-              alt="Evento corporativo con visual moderno"
-            />
-          </div>
-        </section>
-
-        <section class="section portals-section">
-          <div class="portal-card active">
-            <span>Candidatos</span>
-            <h3>Portal personal</h3>
-            <p>Estado de postulacion, documentos, entrevistas, noticias y actualizaciones.</p>
-          </div>
-          <div class="portal-card">
-            <span>Supervisores</span>
-            <h3>Panel operativo</h3>
-            <p>Metas, control documental, calidad de servicio y avance por equipo.</p>
-          </div>
-          <div class="portal-card">
-            <span>RH</span>
-            <h3>CRM reclutamiento</h3>
-            <p>Expedientes, postulaciones, reportes y seguimiento de candidatos.</p>
-          </div>
-        </section>
-
-        <section class="section contact-section" id="contacto">
-          <div class="contact-copy">
-            <span>Contacto</span>
-            <h2>Contactanos y comienza tu proceso.</h2>
-            <p>Av. Tlahuac 3632 Int A 301, Col. Culhuacan, Iztapalapa, CP 09800, CDMX.</p>
-            <p>Reclutamiento@heavenlydreams.com.mx | +52 5667477783</p>
-            <a class="whatsapp-button" href="https://wa.me/525667477783" target="_blank" rel="noreferrer">
-              <i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp
-            </a>
-          </div>
-          <form class="contact-form" id="postularme">
-            <label>Nombre completo<input name="name" required placeholder="Tu nombre" /></label>
-            <label>Apellido<input name="lastname" placeholder="Tu apellido" /></label>
-            <label>Telefono<input name="phone" type="tel" placeholder="+52 ..." /></label>
-            <label>Correo<input name="email" type="email" required placeholder="correo@ejemplo.com" /></label>
-            <label>Puesto de interes
-              <select name="role" id="role-input">
-                <option value="">Selecciona una vacante</option>
-                <option>Ayudante General</option>
-                <option>Atencion al Cliente</option>
-                <option>Supervisor de Personal</option>
-              </select>
-            </label>
-            <label>CV o documentos<input name="documents" type="file" /></label>
-            <label>Mensaje<textarea name="message" rows="4" placeholder="Cuentanos sobre tu experiencia"></textarea></label>
-            <label class="checkbox-row"><input name="news" type="checkbox" /> Registrate para recibir noticias y actualizaciones.</label>
-            <button class="primary-button" type="submit"><i data-lucide="check" aria-hidden="true"></i> Enviar postulacion</button>
-          </form>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div>
-          <strong>Heavenly Dreams SAS de CV</strong>
-          <span>Av. Tlahuac 3632 Int A 301, Iztapalapa, CDMX, CP 09800</span>
-          <span>+52 5667477783 | Reclutamiento@heavenlydreams.com.mx</span>
-        </div>
-        <div>
-          <strong>Acerca de</strong>
-          <span>Inicio | Quienes Somos | Mision, Vision y Valores | Cultura</span>
-        </div>
-        <div>
-          <strong>Vacantes</strong>
-          <span>Ayudante General | Atencion al Cliente | Supervisor</span>
-        </div>
-        <div>
-          <strong>Contacto</strong>
-          <span>Facebook | Messenger | Instagram | www.heavenlydreams.com.mx</span>
-          <span>(c) 2025 Heavenly Dreams SAS de CV. Todos los derechos reservados.</span>
-        </div>
-      </footer>
-    </div>
-
-    <div class="chat-widget" id="chat-widget" aria-live="polite">
-      <button class="chat-fab" type="button" data-open-chat aria-label="Abrir chat de reclutamiento">
-        <img src="assets/chatbot-icon.png" alt="" aria-hidden="true" />
+    <header class="topbar">
+      <a class="brand" href="#portada" aria-label="Heavenly Dreams inicio">
+        <img src="assets/heavenly-dreams-logo.png" alt="Logo Heavenly Dreams" />
+        <span>Heavenly Dreams</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
       </button>
-      <section class="chat-window" aria-label="Chat IA de reclutamiento">
-        <header>
-          <img class="chat-avatar" src="assets/chatbot-icon.png" alt="" aria-hidden="true" />
-          <div><strong>HD Recruit AI</strong><span>Asistente de entrevistas</span></div>
-          <button type="button" data-close-chat aria-label="Cerrar chat"><i data-lucide="x"></i></button>
-        </header>
-        <div class="chat-messages" id="chat-messages">
-          <p class="bot">Hola, puedo ayudarte a encontrar una vacante segun tu experiencia y disponibilidad.</p>
+      <nav id="site-nav" aria-label="Navegacion principal">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#agente">IA</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="scene hero-scene" id="portada" data-scene>
+        <div class="scene-center">
+          <p class="kicker">Heavenly Dreams SAS de CV</p>
+          <h1>Conectamos Talento, Tecnologia y Futuro</h1>
+          <p>
+            Impulsamos el crecimiento de empresas y profesionales mediante soluciones estrategicas de
+            reclutamiento y telecomunicaciones.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contacto">Comenzar ahora</a>
+            <button class="button ghost" type="button" data-open-chat>Hablar con IA</button>
+          </div>
         </div>
-        <form id="chat-form">
-          <input id="chat-input" placeholder="Escribe tu experiencia..." />
-          <button type="submit"><i data-lucide="send" aria-hidden="true"></i></button>
+        <div class="scroll-cue" aria-hidden="true">Explorar</div>
+      </section>
+
+      <section class="scene split-scene city-scene" id="nosotros" data-scene>
+        <div class="media-frame corporate-photo">
+          <div class="city-skyline" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <img src="assets/heavenly-dreams-brand.png" alt="Identidad corporativa Heavenly Dreams" />
+        </div>
+        <div class="copy-panel">
+          <p class="kicker">Quienes somos</p>
+          <h2>Una empresa mexicana para operaciones que necesitan confianza.</h2>
+          <p>
+            Heavenly Dreams es una empresa especializada en reclutamiento, telecomunicaciones y soluciones
+            empresariales. Integramos procesos humanos, tecnologia y seguimiento operativo para conectar talento
+            con oportunidades reales.
+          </p>
+          <div class="floating-cards">
+            <article data-tilt><strong>Profesionalismo</strong><span>Procesos claros y seguimiento puntual.</span></article>
+            <article data-tilt><strong>Innovacion</strong><span>Herramientas digitales aplicadas a RH.</span></article>
+            <article data-tilt><strong>Compromiso</strong><span>Resultados medibles para clientes y candidatos.</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene mission-scene" id="mision" data-scene>
+        <article class="glass-panel">
+          <p class="kicker">Mision</p>
+          <h2>Conectar talento y oportunidades mediante procesos eficientes, humanos e innovadores.</h2>
+        </article>
+        <article class="glass-panel">
+          <p class="kicker">Vision</p>
+          <h2>Ser la empresa lider en reclutamiento y soluciones empresariales en Mexico.</h2>
+        </article>
+      </section>
+
+      <section class="scene orbit-scene" id="valores" data-scene>
+        <div class="orbit-core">
+          <img src="assets/heavenly-dreams-logo.png" alt="Logo Heavenly Dreams" />
+          <span>Valores</span>
+        </div>
+        <div class="value-orbit">
+          <article data-description="Actuamos con transparencia en cada proceso."><span>Integridad</span></article>
+          <article data-description="Elevamos el estandar en servicio y seguimiento."><span>Profesionalismo</span></article>
+          <article data-description="Aplicamos tecnologia para mejorar decisiones."><span>Innovacion</span></article>
+          <article data-description="Cumplimos con equipos, empresas y candidatos."><span>Compromiso</span></article>
+          <article data-description="Trabajamos con indicadores y mejora continua."><span>Excelencia</span></article>
+          <article data-description="Coordinamos talento, supervision y clientes."><span>Trabajo en equipo</span></article>
+          <article data-description="Protegemos informacion y acuerdos operativos."><span>Responsabilidad</span></article>
+          <article data-description="Construimos relaciones humanas y profesionales."><span>Respeto</span></article>
+        </div>
+      </section>
+
+      <section class="scene services-scene" id="servicios" data-scene>
+        <div class="services-copy">
+          <p class="kicker">Servicios</p>
+          <h2>Una rueda operativa para empresas que necesitan crecer con control.</h2>
+          <p id="service-detail">
+            Selecciona una categoria para ver el enfoque de Heavenly Dreams.
+          </p>
+        </div>
+        <div class="service-wheel" aria-label="Servicios Heavenly Dreams">
+          <button data-service="Telecomunicaciones" data-copy="Promocion, soporte comercial y despliegue de equipos para marcas de telecomunicaciones.">Telecomunicaciones</button>
+          <button data-service="Reclutamiento" data-copy="Atraccion, filtro, entrevista y seguimiento de candidatos con enfoque humano.">Reclutamiento</button>
+          <button data-service="Staffing" data-copy="Asignacion de personal operativo y supervision para proyectos con metas claras.">Staffing</button>
+          <button data-service="Soluciones Digitales" data-copy="Herramientas web, CRM de candidatos, reportes y automatizacion de procesos.">Soluciones Digitales</button>
+          <button data-service="Fibra Optica" data-copy="Soporte comercial y operativo para servicios de conectividad y cobertura.">Fibra Optica</button>
+          <button data-service="Consultoria" data-copy="Diagnostico, capacitacion y mejora continua para equipos comerciales.">Consultoria</button>
+          <div class="wheel-core">Heavenly<br />Dreams</div>
+        </div>
+      </section>
+
+      <section class="scene results-scene" id="resultados" data-scene>
+        <p class="kicker">Resultados</p>
+        <h2>Indicadores que transmiten solidez desde el primer recorrido.</h2>
+        <div class="stats-grid">
+          <article><strong data-count="1000" data-suffix="+">0</strong><span>Candidatos colocados</span></article>
+          <article><strong data-count="100" data-suffix="+">0</strong><span>Empresas atendidas</span></article>
+          <article><strong data-text="Nacional">0</strong><span>Cobertura</span></article>
+          <article><strong data-count="95" data-suffix="%">0</strong><span>Satisfaccion</span></article>
+        </div>
+      </section>
+
+      <section class="scene testimonials-scene" id="testimonios" data-scene>
+        <div class="section-title">
+          <p class="kicker">Testimonios</p>
+          <h2>Historias con ritmo visual y confianza inmediata.</h2>
+        </div>
+        <div class="testimonial-rail">
+          <article>
+            <div class="avatar">AG</div><span>★★★★★</span>
+            <p>"El proceso fue transparente y siempre recibi acompanamiento."</p>
+            <strong>Ana Garcia</strong><small>Atencion al Cliente</small>
+          </article>
+          <article>
+            <div class="avatar">LM</div><span>★★★★★</span>
+            <p>"Gracias a Heavenly Dreams encontre una empresa donde puedo desarrollarme."</p>
+            <strong>Luis Martinez</strong><small>Supervisor</small>
+          </article>
+          <article>
+            <div class="avatar">CP</div><span>★★★★★</span>
+            <p>"Nos ayudaron a cubrir posiciones con velocidad y orden."</p>
+            <strong>Carolina Perez</strong><small>Empresa aliada</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="scene logos-scene" id="empresas" data-scene>
+        <p class="kicker">Empresas que confian</p>
+        <h2>Una red comercial preparada para colaboraciones nacionales.</h2>
+        <div class="logo-wall">
+          <article><strong>AT&amp;T</strong><span>Telecomunicaciones</span></article>
+          <article><strong>Totalplay</strong><span>Conectividad</span></article>
+          <article><strong>Infinitum</strong><span>Fibra optica</span></article>
+          <article><strong>Movistar</strong><span>Telefonia</span></article>
+          <article><strong>American Express</strong><span>Servicios</span></article>
+          <article><strong>Costco</strong><span>Retail</span></article>
+        </div>
+      </section>
+
+      <section class="scene ai-scene" id="agente" data-scene>
+        <div class="ai-hologram">
+          <img src="assets/chatbot-icon.png" alt="Icono del agente IA Heavenly Dreams" />
+          <div class="holo-ring"></div>
+        </div>
+        <div class="ai-panel">
+          <p class="kicker">Agente IA</p>
+          <h2>Hola, soy Heavenly Dreams AI</h2>
+          <p>Puedo ayudarte a buscar empleo, solicitar personal, agendar entrevistas, resolver dudas y explicar nuestros servicios.</p>
+          <div class="ai-actions">
+            <button type="button" data-open-chat>Interactuar ahora</button>
+            <a href="#contacto">Agendar contacto</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene contact-scene" id="contacto" data-scene>
+        <div class="contact-copy">
+          <p class="kicker">Contacto</p>
+          <h2>Activa tu siguiente conexion.</h2>
+          <p>Av. Tlahuac 3632 Int A 301, Col. Culhuacan, Iztapalapa, CP 09800, CDMX.</p>
+          <p>Reclutamiento@heavenlydreams.com.mx | +52 5667477783</p>
+          <div class="contact-actions">
+            <a class="button whatsapp" href="https://wa.me/525667477783" target="_blank" rel="noreferrer">WhatsApp</a>
+            <button class="button primary" type="button" data-fill-role="Solicitar Personal">Solicitar Personal</button>
+            <button class="button ghost" type="button" data-fill-role="Buscar Empleo">Buscar Empleo</button>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <input name="name" required placeholder="Nombre completo" />
+          <input name="phone" type="tel" placeholder="Telefono" />
+          <input name="email" type="email" required placeholder="Correo electronico" />
+          <select name="role" id="role-field">
+            <option>Buscar Empleo</option>
+            <option>Solicitar Personal</option>
+            <option>Reclutamiento</option>
+            <option>Telecomunicaciones</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Mensaje"></textarea>
+          <button class="button primary" type="submit">Enviar solicitud</button>
         </form>
       </section>
-    </div>
+
+      <section class="scene closing-scene" id="cierre" data-scene>
+        <img src="assets/heavenly-dreams-logo.png" alt="Logo Heavenly Dreams" />
+        <h2>Construimos conexiones que transforman empresas y cambian vidas</h2>
+        <a class="button primary" href="#portada">Comenzar ahora</a>
+      </section>
+    </main>
+
+    <aside class="chat-widget" id="chat-widget" aria-live="polite">
+      <button class="chat-fab" type="button" data-open-chat aria-label="Abrir chat de Heavenly Dreams AI">
+        <img src="assets/chatbot-icon.png" alt="" aria-hidden="true" />
+      </button>
+      <section class="chat-window" aria-label="Chat IA">
+        <header>
+          <img src="assets/chatbot-icon.png" alt="" aria-hidden="true" />
+          <div><strong>Heavenly Dreams AI</strong><span>Reclutamiento y servicios</span></div>
+          <button type="button" data-close-chat aria-label="Cerrar">x</button>
+        </header>
+        <div class="chat-messages" id="chat-messages">
+          <p class="bot">Hola. Puedo ayudarte a buscar empleo, solicitar personal o conocer nuestros servicios.</p>
+        </div>
+        <form id="chat-form">
+          <input id="chat-input" autocomplete="off" placeholder="Escribe tu consulta..." />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </aside>
 
     <div class="toast" id="toast" role="status"></div>
-    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="app.js"></script>
   </body>
 </html>
